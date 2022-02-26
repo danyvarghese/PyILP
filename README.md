@@ -1,2 +1,2 @@
 # PyILP
-A novel user-friendly Python interface for Inductive Logic programming(ILP)  system for teaching machine learning and data-mining
+A novel user-friendly Python/Jupyter interface for Inductive Logic programming(ILP)  system for teaching relational machine learning and comparing different machine learning algorithms.
