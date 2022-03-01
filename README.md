@@ -40,4 +40,14 @@ aleph_learn(file="BK.pl",
 |settings | **Default** : ***[]*** <br>  Allows to include aleph parameters as file format|
 
 
+**This function will return**;
+|Parameter|Explanation|
+|-------------|----------------|
+|hypothesis|Hyothesis Learned|
+|accuracy| Accuracy of learned hypothesis on test dataset|
+|precision|Precision of learned hypothesis on test dataset|
+|sensitivity|Sensitivity of learned hypothesis on test dataset|
+|specificity|Specificity of learned hypothesis on test dataset|
+|fscore|F-score of learned hypothesis on test dataset|
+|time_learn|Learning Time|
 
