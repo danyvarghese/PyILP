@@ -80,10 +80,10 @@ aleph_cross_validation(file="BK.pl",
 |Parameter|Explanation|
 |-------------|----------------|
 |hypothesis|Hyothesis Learned|
-|accuracy| Accuracy of learned hypothesis on test dataset or </br> individual folds in the case of cross-validation|
-|precision|Precision of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation |
-|sensitivity|Sensitivity of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation |
-|specificity|Specificity of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation|
-|fscore|F-score of learned hypothesis on test dataset or </br> individual  folds in the case of cross-validation|
-|time_learn|Learning Time|
+|accuracy| **Accuracy** of learned hypothesis on test dataset or </br> individual folds in the case of cross-validation|
+|precision|**Precision** of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation |
+|sensitivity|**Sensitivity** of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation |
+|specificity|**Specificity** of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation|
+|fscore|**F-score** of learned hypothesis on test dataset or </br> individual  folds in the case of cross-validation|
+|time_learn|**Learning Time**|
 
