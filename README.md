@@ -76,7 +76,7 @@ aleph_cross_validation(file="BK.pl",
 |settings | **Default** : ***[]*** <br>  Allows to include a**leph parameters or metagol settings including meta-rules** as **file** format|
 
 
-**All the  learning function will return following values ;
+** All the  learning function will return following values ;
 
 |Parameter|Explanation|
 |-------------|----------------|
