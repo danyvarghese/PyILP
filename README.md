@@ -76,7 +76,8 @@ aleph_cross_validation(file="BK.pl",
 |settings | **Default** : ***[]*** <br>  Allows to include a**leph parameters or metagol settings including meta-rules** as **file** format|
 
 
-**This function will return**;
+**All the  learning function will return following values ;
+
 |Parameter|Explanation|
 |-------------|----------------|
 |hypothesis|Hyothesis Learned|
@@ -86,4 +87,7 @@ aleph_cross_validation(file="BK.pl",
 |specificity|**Specificity** of learned hypothesis on test dataset or </br>individual folds in the case of cross-validation|
 |fscore|**F-score** of learned hypothesis on test dataset or </br> individual  folds in the case of cross-validation|
 |time_learn|**Learning Time**|
+
+# Example
+
 
