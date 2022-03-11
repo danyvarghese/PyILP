@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     # Needed to silence warnings (and to be a worthwhile package)
     name='PyILP',
-    url='https://github.com/danyvarghese/PyILP.git',
+    url='https://github.com/danyvarghese/PyILP/PyILP',
     author='Dany Varghese',
     author_email='dany.incito@gmail.com',
     # Needed to actually package something
