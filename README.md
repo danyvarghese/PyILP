@@ -90,4 +90,5 @@ aleph_cross_validation(file="BK.pl",
 
 # Example
 
+The folders [aleph_examples](https://github.com/danyvarghese/PyILP/tree/main/aleph_examples) and [metagol_examples](https://github.com/danyvarghese/PyILP/tree/main/metagol_examples) contains  Jypyter-Notebook files. 
 
