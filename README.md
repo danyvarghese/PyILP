@@ -56,7 +56,7 @@ metagol_learn(file="BK.pl",
 The following fuction will help you to perfom k-fold cross-validation using metagol.
 
 ```python
-aleph_cross_validation(file="BK.pl", 
+metagol_cross_validation(file="BK.pl", 
                        CV=2, 
                        positive_example="pos_example.f",
                        negative_example="neg_example.n", 
