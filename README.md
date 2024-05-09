@@ -16,7 +16,7 @@ Metagol is an Meta-Interpretive Learning (MIL) system maintained by Andrew Cropp
 # Requirements
 [SWI-Prolog](https://www.swi-prolog.org/)
 
-[pyswip](https://pypi.org/project/pyswip/)
+[Janus](https://www.swi-prolog.org/pldoc/man?section=janus-python-package)
 
 # Usage
 ## Aleph - Hold-out
