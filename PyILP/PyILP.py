@@ -1,11 +1,10 @@
 import numpy as np
-from pyswip import *
-from pyswip import Prolog
 import shutil
 from texttable import Texttable
 import time
 import os
 import random
+import janus_swi as janus
 
 
 def read_example(file_name):
@@ -66,11 +65,11 @@ def metrics(TP,TN,FP,FN):
 
 
 def learn_theory_aleph(file_name):
-    prolog = Prolog()
+    #prolog = Prolog()
     program_name = file_name[:-3]
-    prolog.consult(file_name)
-    a = list(prolog.query("induce(program_name)"))
-    b = list(prolog.query("aleph:write_rules('theory.txt',program_name)"))
+    janus.consult(file_name)
+    a = list(janus.query("induce(program_name)"))
+    b = list(janus.query("aleph:write_rules('theory.txt',program_name)"))
 
 
 def generate_theory_metagol(file_name):
@@ -115,8 +114,8 @@ def evaluate_theory_prolog(theory, file_1, pos, neg):
             file_object.write(j + ".")
             file_object.write("\n")
     file_object.close()
-    prolog = Prolog()
-    prolog.consult(file_2)
+    
+    janus.consult(file_2)
     pos_ex = pos  # file_3.read().splitlines()
 
     neg_ex = neg  # file_4.read().splitlines()
@@ -124,14 +123,10 @@ def evaluate_theory_prolog(theory, file_1, pos, neg):
     pos_count = 0
     neg_count = 0
     for k in pos_ex:
-        # print(k)
-        a = list(prolog.query(k))
-        # print(len(a))
-        if len(a) > 0:
+        if janus.query_once(k)['truth']:
             pos_count = pos_count + 1
     for l in neg_ex:
-        b = list(prolog.query(l))
-        if len(b) <= 0:
+        if not janus.query_once(l)['truth']:
             neg_count = neg_count + 1
     # print(pos_count, neg_count)
     acc = (pos_count + neg_count) / (len(pos_ex) + len(neg_ex))
@@ -351,16 +346,16 @@ def metagol(file_name, pos, neg):
         file_object = open(file_1, 'a')
         file_object.write(string_1)
         file_object.close()
-        prolog = Prolog()
-        prolog.consult(file_1)
+        #prolog = Prolog()
+        janus.consult(file_1)
         theory = generate_theory_metagol(file_1)
 
         os.remove(file_1)
 
         return theory
     else:
-        prolog = Prolog()
-        prolog.consult(file_name)
+        #prolog = Prolog()
+        janus.consult(file_name)
         theory = generate_theory_metagol(file_name)
         return theory
 
